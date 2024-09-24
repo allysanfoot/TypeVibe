@@ -7,8 +7,8 @@ import Login from './Login'
 function Navigation() {
     return (
         <div>
-            <nav>
-                <ul>
+            <nav className='navigation'>
+                <ul className='navigation-list'>
                     <li>
                         <Link to="/">Home</Link>
                     </li>
