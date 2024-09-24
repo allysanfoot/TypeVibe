@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/loginModal.css'
+import CloseButton from './CloseButton';
 
 const LoginModal = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
@@ -7,6 +8,7 @@ const LoginModal = ({ isOpen, onClose }) => {
     return (
         <div className='overlay'>
             <div className='modal'>
+                <CloseButton onClick={onClose} />
                 <h2>Log in to your account</h2>
                 {/* Login form goes here */}
                 <form>
@@ -19,16 +21,16 @@ const LoginModal = ({ isOpen, onClose }) => {
                         Password
                         <br />
                         <input type='password' />
+                        <p><a className='login-link' href='#'>Trouble logging in?</a></p>
                     </label>
                     <button className='login-button' type='submit'>
                         Login
                     </button>
                 </form>
-                <p>Don't have an account? <a href='#'>Sign up</a></p>
-                <p>Forgot your password? <a href='#'>Reset password</a></p>
-                <button className='close' onClick={onClose}>
-                    Cancel
+                <button className='register-button' type='submit'>
+                    Don't have an account? Sign up
                 </button>
+
             </div>
         </div>
     );

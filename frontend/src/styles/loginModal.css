@@ -1,3 +1,4 @@
+
 form {
     display: flex;
     flex-direction: column;
@@ -5,35 +6,39 @@ form {
 }
 
 h2 {
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1rem 1rem;
 }
 
 input {
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-top: 5px;
     padding: 10px;
     width: 93%;
 }
 
 label {
+    font-size: medium;
     margin-bottom: 1rem;
 }
 
 p {
     font-size: small;
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .close {
-    background-color: white;
-    border: 2px solid rgb(231, 171, 171);
+    background-color: lightgrey;
+    border: 2px solid lightgrey;
     border-radius: 5px;
-    color: rgb(231, 171, 171);
+    color: white;
     cursor: pointer;
-    margin-top: 10px;
-    padding: 10px;
+    font-size: large;
+    margin-left: 95%;
+    padding: 2px 5px;
     transition: all 0.2s ease-out;
 }
 
@@ -53,6 +58,13 @@ p {
     top: 10px;
 }
 
+.login-link {
+    color: grey;
+}
+.login-link:hover {
+    text-decoration: underline;
+}
+
 .modal {
     align-items: center;
     display: flex;
@@ -68,10 +80,27 @@ p {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+    flex-direction: column;
     height: 100%;
     left: 0;
     justify-content: center;
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.register-button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #80b0dd;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: #80b0dd;
+    color: white;
 }
