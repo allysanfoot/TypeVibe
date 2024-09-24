@@ -11,7 +11,7 @@ const LoginModal = ({ isOpen, onClose }) => {
                 <button className='closeButton' onClick={onClose}>
                     &times;
                 </button>
-                {/* Your login form goes here */}
+                {/* Login form goes here */}
             </div>
         </div>
     );
