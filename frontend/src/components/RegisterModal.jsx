@@ -13,7 +13,7 @@ const RegisterModal = (props) => {
     return (
         <div className='overlay'>
             <div className='modal'>
-                <CloseButton onClick={(event) => { setLoginOpen(false) }} />
+                <CloseButton onClick={(event) => { setSignupOpen(false) }} />
                 <h2>Register for an account</h2>
                 {/* Register form goes here */}
                 <form>
