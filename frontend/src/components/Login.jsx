@@ -18,15 +18,11 @@ const Login = (props) => {
         setLoginOpen(true)
     }
 
-    const handleSignup = () => {
-        setSignupOpen(true)
-    }
-
     return (
         <div>
             <button onClick={handleLogin}>Login</button>
             <LoginModal open={loginOpen} setLoginOpen={setLoginOpen} setSignupOpen={setSignupOpen} />
-            {/* <RegisterModal open={signupOpen} setLoginOpen={setLoginOpen} setSignupOpen={setSignupOpen} /> */}
+            <RegisterModal open={signupOpen} setLoginOpen={setLoginOpen} setSignupOpen={setSignupOpen} />
         </div>
     );
 };

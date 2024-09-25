@@ -3,6 +3,7 @@ import CloseButton from './CloseButton';
 
 const RegisterModal = (props) => {
     const { open, setLoginOpen, setSignupOpen } = props;
+    if (!open) return null;
 
     const switchLogin = (event) => {
         setSignupOpen(false)
@@ -31,11 +32,11 @@ const RegisterModal = (props) => {
                         <br />
                         <input type='password' />
                     </label>
-                    <button className='register-button' type='submit'>
+                    <button className='login-button' type='submit'>
                         Register
                     </button>
                 </form>
-                <button className='login-button' type='submit' onClick={switchLogin}>
+                <button className='register-button' type='submit' onClick={switchLogin}>
                     Already have an account? Log in
                 </button>
             </div>
