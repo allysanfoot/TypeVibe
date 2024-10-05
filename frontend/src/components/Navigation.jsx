@@ -2,7 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/navigation.css'
 
-import Login from './Login'
+// import components
+import LoginOrRegister from './LoginOrRegister'
+import { CollapsibleMenu } from './CollapsibleMenu'
+
+// import images
+import logo from '../images/favicon.png'
 
 function Navigation() {
     return (
@@ -10,16 +15,11 @@ function Navigation() {
             <nav className='navigation'>
                 <ul className='navigation-list'>
                     <li>
-                        <Link to="/">Home</Link>
+                        <img src={logo} alt='logo' className='logo' />
                     </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
+                    <CollapsibleMenu />
                 </ul>
-                <Login />
+                <LoginOrRegister />
             </nav>
         </div>
     )

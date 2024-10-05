@@ -4,13 +4,12 @@ import '../styles/login.css';
 
 // import components
 import LoginModal from './LoginModal';
-import Register from './Register';
 import RegisterModal from './RegisterModal';
 
 // Set the app element for accessibility
 Modal.setAppElement('#root');
 
-const Login = (props) => {
+const LoginOrRegister = (props) => {
     const [loginOpen, setLoginOpen] = useState(false)
     const [signupOpen, setSignupOpen] = useState(false)
 
@@ -20,11 +19,11 @@ const Login = (props) => {
 
     return (
         <div>
-            <button onClick={handleLogin}>Login</button>
+            <button className='login-or-register' onClick={handleLogin}>CREATE ACCOUNT OR LOG IN</button>
             <LoginModal open={loginOpen} setLoginOpen={setLoginOpen} setSignupOpen={setSignupOpen} />
             <RegisterModal open={signupOpen} setLoginOpen={setLoginOpen} setSignupOpen={setSignupOpen} />
         </div>
     );
 };
 
-export default Login;
+export default LoginOrRegister;

@@ -18,9 +18,21 @@ li {
     padding: 0 2rem;
     background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
 }
 
 .navigation-list {
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.navigation-list i {
+    font-size: 2rem;
+    cursor: pointer;
 }

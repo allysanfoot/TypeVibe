@@ -1,0 +1,53 @@
+/* Basic styling for the navigation */
+.navbar {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+/* Menu button styling */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    position: absolute;
+    /* Absolutely positioned so it doesn't affect the navbar height */
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 5px;
+    /* Space between the button and the menu */
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.dropdown-content ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content ul li a:hover {
+    background-color: #ddd;
+}
